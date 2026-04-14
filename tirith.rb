@@ -5,20 +5,20 @@
 class Tirith < Formula
   desc "AI API cost observability — one import, full transparency"
   homepage "https://github.com/joedaviesio/tirith"
-  version "2.0.2"
+  version "2.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.2/tirith_2.0.2_darwin_amd64.tar.gz"
-      sha256 "68090f8c806d6f45bf17317d4161ad12b6695f58fa3e4a1fae9ae3181836aac7"
+      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.3/tirith_2.0.3_darwin_amd64.tar.gz"
+      sha256 "f698aaf03159192c137b3c3c31a651341c5d51d216448c3519bd195b0d2ffccd"
 
       define_method(:install) do
         bin.install "tirith"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.2/tirith_2.0.2_darwin_arm64.tar.gz"
-      sha256 "50373078ac0407f35c5d7a451079916adaa048c422e401d3d97bba88b4e983bd"
+      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.3/tirith_2.0.3_darwin_arm64.tar.gz"
+      sha256 "5ffa8baf740bcf789f6ce9339fc933915e0b89f9d158abff1fbcc7dcabb3b192"
 
       define_method(:install) do
         bin.install "tirith"
@@ -28,15 +28,15 @@ class Tirith < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.2/tirith_2.0.2_linux_amd64.tar.gz"
-      sha256 "0c2d3e60bf49a4775cc21ff5ed74876c30f97c06a9346e3a1d5782f6ca089990"
+      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.3/tirith_2.0.3_linux_amd64.tar.gz"
+      sha256 "e39693a74521ead0895b83fa626be45a12e3c5febfd26cea4d41d2ec9b7a6b26"
       define_method(:install) do
         bin.install "tirith"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.2/tirith_2.0.2_linux_arm64.tar.gz"
-      sha256 "fad7e77e76a3d1789c7cc19420210d8ef7082c56912da9d4acb8f3037cde5d5d"
+      url "https://github.com/joedaviesio/tirith/releases/download/v2.0.3/tirith_2.0.3_linux_arm64.tar.gz"
+      sha256 "65aafddd7b2c7cd2445cc442674e86f9a8756f7a304ecaa4c022f09050b9de93"
       define_method(:install) do
         bin.install "tirith"
       end
